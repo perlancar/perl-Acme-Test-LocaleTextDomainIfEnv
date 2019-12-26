@@ -15,12 +15,12 @@ English:
 
 Indonesian (not in effect yet without PERL_LOCALE_TEXTDOMAIN_IFENV):
 
- % LANGUAGE=id acme-test-localetextdomain
+ % LANGUAGE=id acme-test-localetextdomainifenv
  Halo, dunia!
 
 Indonesian:
 
- % PERL_LOCALE_TEXTDOMAIN_IFENV=1 LANGUAGE=id acme-test-localetextdomain
+ % PERL_LOCALE_TEXTDOMAIN_IFENV=1 LANGUAGE=id acme-test-localetextdomainifenv
  Halo, dunia!
 
 (Note: LANGUAGE takes precedence over LANG; if you want to set using LANG, check
