@@ -1,0 +1,27 @@
+#!perl
+
+use Acme::Test::LocaleTextDomainIfEnv 'hello';
+hello;
+
+# ABSTRACT: Test Locale::TextDomain::IfEnv
+# PODNAME:
+
+=head1 SYNOPSIS
+
+English:
+
+ % acme-test-localetextdomainifenv
+ Hello, world!
+
+Indonesian (not in effect yet without PERL_LOCALE_TEXTDOMAIN_IFENV):
+
+ % LANGUAGE=id acme-test-localetextdomain
+ Halo, dunia!
+
+Indonesian:
+
+ % PERL_LOCALE_TEXTDOMAIN_IFENV=1 LANGUAGE=id acme-test-localetextdomain
+ Halo, dunia!
+
+(Note: LANGUAGE takes precedence over LANG; if you want to set using LANG, check
+whether LANGUAGE is already defined in your environment.)

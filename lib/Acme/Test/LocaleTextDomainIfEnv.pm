@@ -5,7 +5,13 @@ package Acme::Test::LocaleTextDomainIfEnv;
 # DIST
 # VERSION
 
-use Locale::TextDomain::IfEnv;
+use strict;
+use warnings;
+
+use Locale::TextDomain::IfEnv 'Acme-Test-LocaleTextDomainIfEnv';
+
+use Exporter qw(import);
+our @EXPORT_OK = qw(hello);
 
 sub hello {
     print __ "Hello, world\n";
@@ -13,6 +19,8 @@ sub hello {
 
 1;
 # ABSTRACT: Text Locale::TextDomain::IfEnv
+
+=for Pod::Coverage ^(.+)$
 
 =head1 DESCRIPTION
 
