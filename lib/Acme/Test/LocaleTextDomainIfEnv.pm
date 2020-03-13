@@ -18,7 +18,7 @@ sub hello {
 }
 
 1;
-# ABSTRACT: Text Locale::TextDomain::IfEnv
+# ABSTRACT: Test Locale::TextDomain::IfEnv
 
 =for Pod::Coverage ^(.+)$
 
